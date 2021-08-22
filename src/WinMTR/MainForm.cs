@@ -23,5 +23,10 @@ namespace WinMTR
             aboutForm.Show();
         }
 
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SettingsForm settingsForm = new SettingsForm();
+            settingsForm.Show();        
+        }
     }
 }

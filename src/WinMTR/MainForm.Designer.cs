@@ -39,10 +39,10 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -86,8 +86,9 @@
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
@@ -145,6 +146,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Actions";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(471, 16);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Send";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(390, 16);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Start";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -161,24 +180,6 @@
             this.label1.Size = new System.Drawing.Size(131, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hostname / IP Address:";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(390, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(471, 16);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Send";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // statusStrip1
             // 
