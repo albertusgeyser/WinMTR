@@ -71,9 +71,11 @@
             // 
             // quitToolStripMenuItem
             // 
+            this.quitToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Exit;
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
             this.quitToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
             this.quitToolStripMenuItem.Text = "Quit";
+            this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -85,8 +87,9 @@
             // 
             // settingsToolStripMenuItem
             // 
+            this.settingsToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Application;
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
@@ -104,18 +107,20 @@
             this.traceDetailToolStripMenuItem.Checked = true;
             this.traceDetailToolStripMenuItem.CheckOnClick = true;
             this.traceDetailToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.traceDetailToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Table;
             this.traceDetailToolStripMenuItem.Name = "traceDetailToolStripMenuItem";
-            this.traceDetailToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.traceDetailToolStripMenuItem.Text = "Trace Detail";
+            this.traceDetailToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.traceDetailToolStripMenuItem.Text = "Show Detail";
             // 
             // traceGraphToolStripMenuItem
             // 
             this.traceGraphToolStripMenuItem.Checked = true;
             this.traceGraphToolStripMenuItem.CheckOnClick = true;
             this.traceGraphToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.traceGraphToolStripMenuItem.Image = global::WinMTR.Properties.Resources._3d_bar_chart;
             this.traceGraphToolStripMenuItem.Name = "traceGraphToolStripMenuItem";
-            this.traceGraphToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.traceGraphToolStripMenuItem.Text = "Trace Graph";
+            this.traceGraphToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.traceGraphToolStripMenuItem.Text = "Show Graph";
             // 
             // helpToolStripMenuItem
             // 
@@ -127,6 +132,7 @@
             // 
             // aboutToolStripMenuItem
             // 
+            this.aboutToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Info;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
@@ -148,26 +154,35 @@
             // 
             // button2
             // 
+            this.button2.Image = global::WinMTR.Properties.Resources.Stock_Index_Up_16x16;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(471, 16);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(75, 30);
             this.button2.TabIndex = 3;
             this.button2.Text = "Send";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
+            this.button1.Image = global::WinMTR.Properties.Resources.Play_16x16;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(390, 16);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 30);
             this.button1.TabIndex = 2;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
+            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            "1.1.1.1",
+            "8.8.8.8",
+            "8.8.4.4",
+            "google.com"});
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(143, 16);
+            this.comboBox1.Location = new System.Drawing.Point(143, 19);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(241, 23);
             this.comboBox1.TabIndex = 1;
@@ -175,7 +190,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 19);
+            this.label1.Location = new System.Drawing.Point(6, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(131, 15);
             this.label1.TabIndex = 0;

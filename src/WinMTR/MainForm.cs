@@ -28,5 +28,10 @@ namespace WinMTR
             SettingsForm settingsForm = new SettingsForm();
             settingsForm.Show();        
         }
+
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
