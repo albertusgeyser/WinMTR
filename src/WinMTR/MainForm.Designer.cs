@@ -182,6 +182,11 @@
             "8.8.4.4",
             "google.com"});
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1.1.1.1",
+            "8.8.8.8",
+            "8.8.4.4",
+            "google.com"});
             this.comboBox1.Location = new System.Drawing.Point(143, 19);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(241, 23);
