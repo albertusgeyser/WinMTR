@@ -103,6 +103,26 @@ namespace WinMTR.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Information_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("Information_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Log_Out_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("Log Out_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Play_16x16 {
             get {
                 object obj = ResourceManager.GetObject("Play_16x16", resourceCulture);
@@ -116,6 +136,16 @@ namespace WinMTR.Properties {
         internal static System.Drawing.Bitmap Play_24x24 {
             get {
                 object obj = ResourceManager.GetObject("Play_24x24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Settings_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("Settings_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
