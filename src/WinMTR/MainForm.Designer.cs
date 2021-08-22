@@ -73,7 +73,7 @@
             // 
             this.quitToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Log_Out_16x16;
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
             this.quitToolStripMenuItem.Text = "Quit";
             this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
@@ -89,7 +89,7 @@
             // 
             this.settingsToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Settings_16x16;
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
@@ -109,7 +109,7 @@
             this.traceDetailToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.traceDetailToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Table;
             this.traceDetailToolStripMenuItem.Name = "traceDetailToolStripMenuItem";
-            this.traceDetailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.traceDetailToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.traceDetailToolStripMenuItem.Text = "Show Detail";
             // 
             // traceGraphToolStripMenuItem
@@ -119,7 +119,7 @@
             this.traceGraphToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.traceGraphToolStripMenuItem.Image = global::WinMTR.Properties.Resources._3d_bar_chart;
             this.traceGraphToolStripMenuItem.Name = "traceGraphToolStripMenuItem";
-            this.traceGraphToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.traceGraphToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.traceGraphToolStripMenuItem.Text = "Show Graph";
             // 
             // helpToolStripMenuItem
@@ -134,7 +134,7 @@
             // 
             this.aboutToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Information_16x16;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -162,6 +162,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Send";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
