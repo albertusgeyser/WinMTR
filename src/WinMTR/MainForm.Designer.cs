@@ -159,11 +159,12 @@
             // 
             this.button2.Image = global::WinMTR.Properties.Resources.Stock_Index_Up_16x16;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(471, 16);
+            this.button2.Location = new System.Drawing.Point(479, 16);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 30);
+            this.button2.Size = new System.Drawing.Size(99, 30);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Send";
+            this.button2.Text = "Send Results";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -173,9 +174,10 @@
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(390, 16);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 30);
+            this.button1.Size = new System.Drawing.Size(83, 30);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Start";
+            this.button1.Text = "Start MTR";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // comboBox1
