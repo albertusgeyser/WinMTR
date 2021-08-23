@@ -41,7 +41,7 @@ namespace WinMTR
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Send results to selected service provider . . .
+            // Send results to service provider . . .
             var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://url");
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = "POST";

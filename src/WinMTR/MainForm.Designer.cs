@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,6 +45,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.showSpeedTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -97,7 +99,8 @@
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.traceDetailToolStripMenuItem,
-            this.traceGraphToolStripMenuItem});
+            this.traceGraphToolStripMenuItem,
+            this.showSpeedTestToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "View";
@@ -109,8 +112,8 @@
             this.traceDetailToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.traceDetailToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Table;
             this.traceDetailToolStripMenuItem.Name = "traceDetailToolStripMenuItem";
-            this.traceDetailToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.traceDetailToolStripMenuItem.Text = "Show Detail";
+            this.traceDetailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.traceDetailToolStripMenuItem.Text = "MTR Detail";
             // 
             // traceGraphToolStripMenuItem
             // 
@@ -119,8 +122,8 @@
             this.traceGraphToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.traceGraphToolStripMenuItem.Image = global::WinMTR.Properties.Resources._3d_bar_chart;
             this.traceGraphToolStripMenuItem.Name = "traceGraphToolStripMenuItem";
-            this.traceGraphToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.traceGraphToolStripMenuItem.Text = "Show Graph";
+            this.traceGraphToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.traceGraphToolStripMenuItem.Text = "MTR Graph";
             // 
             // helpToolStripMenuItem
             // 
@@ -210,6 +213,13 @@
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // showSpeedTestToolStripMenuItem
+            // 
+            this.showSpeedTestToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showSpeedTestToolStripMenuItem.Image")));
+            this.showSpeedTestToolStripMenuItem.Name = "showSpeedTestToolStripMenuItem";
+            this.showSpeedTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.showSpeedTestToolStripMenuItem.Text = "SPEED Test";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -248,6 +258,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripMenuItem showSpeedTestToolStripMenuItem;
     }
 }
 
