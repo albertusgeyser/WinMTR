@@ -9,6 +9,7 @@ MTR Network tool for Windows (C#) to send results to service providers to analyz
 - Create striking logo / icon for WinMTR.
 - Create an updated (dot net 5) MTR tool based on <a href="https://sourceforge.net/projects/dotmtr/">dotMTR</a>.
 - Add Dropped, Jitter, Jitter Min, Jitter Max and Jitter Avg  to results.
+- Add Mean Opinion Score (MOS) to results.
 - Make all possible results selectable to be viewed on results grid.
 - Add Settings Form to edit basic settings.
 - Add Submit Results button to send results to service provider selected in settings.
