@@ -80,7 +80,7 @@
             // 
             // quitToolStripMenuItem
             // 
-            this.quitToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Log_Out_16x16;
+            this.quitToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Quit;
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
             this.quitToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
             this.quitToolStripMenuItem.Text = "Quit";
@@ -96,7 +96,7 @@
             // 
             // settingsToolStripMenuItem
             // 
-            this.settingsToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Settings_16x16;
+            this.settingsToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Settings;
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
@@ -127,7 +127,7 @@
             this.GraphToolStripMenuItem.Checked = true;
             this.GraphToolStripMenuItem.CheckOnClick = true;
             this.GraphToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.GraphToolStripMenuItem.Image = global::WinMTR.Properties.Resources._3d_bar_chart;
+            this.GraphToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Graph;
             this.GraphToolStripMenuItem.Name = "GraphToolStripMenuItem";
             this.GraphToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.GraphToolStripMenuItem.Text = "MTR Graph";
@@ -143,7 +143,7 @@
             // 
             // aboutToolStripMenuItem
             // 
-            this.aboutToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Information_16x16;
+            this.aboutToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Information;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
@@ -166,7 +166,7 @@
             // 
             // button2
             // 
-            this.button2.Image = global::WinMTR.Properties.Resources.Stock_Index_Up_16x16;
+            this.button2.Image = global::WinMTR.Properties.Resources.Send;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(479, 16);
             this.button2.Name = "button2";
@@ -179,7 +179,7 @@
             // 
             // button1
             // 
-            this.button1.Image = global::WinMTR.Properties.Resources.Play_16x16;
+            this.button1.Image = global::WinMTR.Properties.Resources.Play;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(390, 16);
             this.button1.Name = "button1";

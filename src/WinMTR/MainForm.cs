@@ -65,14 +65,14 @@ namespace WinMTR
             {
                 mtr_start = false;
                 button1.Text = "Start MTR";
-                object BI = global::WinMTR.Properties.Resources.ResourceManager.GetObject("Play_16x16");
+                object BI = global::WinMTR.Properties.Resources.ResourceManager.GetObject("Play");
                 button1.Image = (Image)BI;
             }
             else if (mtr_start == false)
             {
                 mtr_start = true;
                 button1.Text = "Stop MTR";
-                object BI = global::WinMTR.Properties.Resources.ResourceManager.GetObject("Stop_16x16");
+                object BI = global::WinMTR.Properties.Resources.ResourceManager.GetObject("Stop");
                 button1.Image = (Image)BI;
             }
         }
