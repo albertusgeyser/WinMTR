@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,9 +46,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.grid1 = new SourceGrid.Grid();
+            this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
+            this.progressIndicator1 = new ProgressControls.ProgressIndicator();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,7 +118,7 @@
             this.DetailToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.DetailToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Table;
             this.DetailToolStripMenuItem.Name = "DetailToolStripMenuItem";
-            this.DetailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.DetailToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.DetailToolStripMenuItem.Text = "MTR Detail";
             this.DetailToolStripMenuItem.CheckedChanged += new System.EventHandler(this.DetailToolStripMenuItem_CheckedChanged);
             // 
@@ -123,7 +129,7 @@
             this.GraphToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.GraphToolStripMenuItem.Image = global::WinMTR.Properties.Resources._3d_bar_chart;
             this.GraphToolStripMenuItem.Name = "GraphToolStripMenuItem";
-            this.GraphToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.GraphToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.GraphToolStripMenuItem.Text = "MTR Graph";
             this.GraphToolStripMenuItem.CheckStateChanged += new System.EventHandler(this.GraphToolStripMenuItem_CheckedChanged);
             // 
@@ -145,6 +151,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.progressIndicator1);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.comboBox1);
@@ -229,13 +236,53 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.splitContainer1.Panel1.Controls.Add(this.grid1);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.splitContainer1.Panel2.Controls.Add(this.zedGraphControl1);
             this.splitContainer1.Size = new System.Drawing.Size(800, 352);
             this.splitContainer1.SplitterDistance = 200;
             this.splitContainer1.TabIndex = 3;
+            // 
+            // grid1
+            // 
+            this.grid1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grid1.EnableSort = true;
+            this.grid1.Location = new System.Drawing.Point(0, 0);
+            this.grid1.Name = "grid1";
+            this.grid1.OptimizeMode = SourceGrid.CellOptimizeMode.ForRows;
+            this.grid1.SelectionMode = SourceGrid.GridSelectionMode.Cell;
+            this.grid1.Size = new System.Drawing.Size(800, 200);
+            this.grid1.TabIndex = 0;
+            this.grid1.TabStop = true;
+            this.grid1.ToolTipText = "";
+            // 
+            // zedGraphControl1
+            // 
+            this.zedGraphControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.zedGraphControl1.Location = new System.Drawing.Point(0, 0);
+            this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.zedGraphControl1.Name = "zedGraphControl1";
+            this.zedGraphControl1.ScrollGrace = 0D;
+            this.zedGraphControl1.ScrollMaxX = 0D;
+            this.zedGraphControl1.ScrollMaxY = 0D;
+            this.zedGraphControl1.ScrollMaxY2 = 0D;
+            this.zedGraphControl1.ScrollMinX = 0D;
+            this.zedGraphControl1.ScrollMinY = 0D;
+            this.zedGraphControl1.ScrollMinY2 = 0D;
+            this.zedGraphControl1.Size = new System.Drawing.Size(800, 148);
+            this.zedGraphControl1.TabIndex = 0;
+            // 
+            // progressIndicator1
+            // 
+            this.progressIndicator1.Location = new System.Drawing.Point(760, 12);
+            this.progressIndicator1.Name = "progressIndicator1";
+            this.progressIndicator1.Percentage = 0F;
+            this.progressIndicator1.Size = new System.Drawing.Size(34, 34);
+            this.progressIndicator1.TabIndex = 4;
+            this.progressIndicator1.Text = "progressIndicator1";
             // 
             // Form1
             // 
@@ -253,6 +300,8 @@
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -279,6 +328,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        private ZedGraph.ZedGraphControl zedGraphControl1;
+        private SourceGrid.Grid grid1;
+        private ProgressControls.ProgressIndicator progressIndicator1;
     }
 }
 
