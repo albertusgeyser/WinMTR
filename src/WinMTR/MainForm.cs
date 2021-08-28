@@ -21,21 +21,18 @@ namespace WinMTR
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Show About Form . . .
             AboutForm aboutForm = new AboutForm();
-            aboutForm.Show();
+            aboutForm.ShowDialog();
         }
 
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Show Settings Form . . .
             SettingsForm settingsForm = new SettingsForm();
             settingsForm.Show();        
         }
 
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Quit WinMTR . . . 
             Environment.Exit(0);
         }
 
@@ -78,6 +75,18 @@ namespace WinMTR
                 object BI = global::WinMTR.Properties.Resources.ResourceManager.GetObject("Stop_16x16");
                 button1.Image = (Image)BI;
             }
+        }
+
+        private void DetailToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
+        {
+            if (DetailToolStripMenuItem.Checked) { splitContainer1.Panel1Collapsed = false; }
+            else { splitContainer1.Panel1Collapsed = true; }
+        }
+
+        private void GraphToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
+        {
+            if (GraphToolStripMenuItem.Checked) { splitContainer1.Panel2Collapsed = false; }
+            else { splitContainer1.Panel2Collapsed = true; }
         }
     }
 }

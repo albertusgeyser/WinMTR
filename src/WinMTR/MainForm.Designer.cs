@@ -34,8 +34,8 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.traceDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.traceGraphToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.GraphToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -44,8 +44,11 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -96,31 +99,33 @@
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.traceDetailToolStripMenuItem,
-            this.traceGraphToolStripMenuItem});
+            this.DetailToolStripMenuItem,
+            this.GraphToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "View";
             // 
-            // traceDetailToolStripMenuItem
+            // DetailToolStripMenuItem
             // 
-            this.traceDetailToolStripMenuItem.Checked = true;
-            this.traceDetailToolStripMenuItem.CheckOnClick = true;
-            this.traceDetailToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.traceDetailToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Table;
-            this.traceDetailToolStripMenuItem.Name = "traceDetailToolStripMenuItem";
-            this.traceDetailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.traceDetailToolStripMenuItem.Text = "MTR Detail";
+            this.DetailToolStripMenuItem.Checked = true;
+            this.DetailToolStripMenuItem.CheckOnClick = true;
+            this.DetailToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.DetailToolStripMenuItem.Image = global::WinMTR.Properties.Resources.Table;
+            this.DetailToolStripMenuItem.Name = "DetailToolStripMenuItem";
+            this.DetailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.DetailToolStripMenuItem.Text = "MTR Detail";
+            this.DetailToolStripMenuItem.CheckedChanged += new System.EventHandler(this.DetailToolStripMenuItem_CheckedChanged);
             // 
-            // traceGraphToolStripMenuItem
+            // GraphToolStripMenuItem
             // 
-            this.traceGraphToolStripMenuItem.Checked = true;
-            this.traceGraphToolStripMenuItem.CheckOnClick = true;
-            this.traceGraphToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.traceGraphToolStripMenuItem.Image = global::WinMTR.Properties.Resources._3d_bar_chart;
-            this.traceGraphToolStripMenuItem.Name = "traceGraphToolStripMenuItem";
-            this.traceGraphToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.traceGraphToolStripMenuItem.Text = "MTR Graph";
+            this.GraphToolStripMenuItem.Checked = true;
+            this.GraphToolStripMenuItem.CheckOnClick = true;
+            this.GraphToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.GraphToolStripMenuItem.Image = global::WinMTR.Properties.Resources._3d_bar_chart;
+            this.GraphToolStripMenuItem.Name = "GraphToolStripMenuItem";
+            this.GraphToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.GraphToolStripMenuItem.Text = "MTR Graph";
+            this.GraphToolStripMenuItem.CheckStateChanged += new System.EventHandler(this.GraphToolStripMenuItem_CheckedChanged);
             // 
             // helpToolStripMenuItem
             // 
@@ -213,11 +218,31 @@
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Cursor = System.Windows.Forms.Cursors.HSplit;
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 76);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.splitContainer1.Size = new System.Drawing.Size(800, 352);
+            this.splitContainer1.SplitterDistance = 200;
+            this.splitContainer1.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
@@ -228,6 +253,8 @@
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,8 +268,8 @@
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem traceDetailToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem traceGraphToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem DetailToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem GraphToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -251,6 +278,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.SplitContainer splitContainer1;
     }
 }
 
